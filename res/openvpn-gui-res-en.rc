@@ -24,7 +24,7 @@
 ID_DLG_PASSPHRASE DIALOGEX 6, 18, 160, 83
 STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | DS_CENTER | DS_SETFOREGROUND
 EXSTYLE WS_EX_TOPMOST
-CAPTION "OpenVPN - Private Key Password"
+CAPTION "Claroty - Private Key Password"
 FONT 8, "Microsoft Sans Serif"
 LANGUAGE LANG_ENGLISH, SUBLANG_DEFAULT
 BEGIN
@@ -56,7 +56,7 @@ END
 /* Auth Username/Password/Challenge Dialog */
 ID_DLG_AUTH_CHALLENGE DIALOG 6, 18, 160, 129
 STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | DS_CENTER | DS_SETFOREGROUND
-CAPTION "OpenVPN - User Authentication"
+CAPTION "Claroty - User Authentication"
 FONT 8, "Microsoft Sans Serif"
 LANGUAGE LANG_ENGLISH, SUBLANG_DEFAULT
 BEGIN
@@ -76,7 +76,7 @@ END
 /* Challenge Response Dialog */
 ID_DLG_CHALLENGE_RESPONSE DIALOG 6, 18, 212, 72
 STYLE WS_SIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | DS_CENTER | DS_SETFOREGROUND
-CAPTION "OpenVPN - Challenge Response"
+CAPTION "Claroty - Challenge Response"
 FONT 8, "Microsoft Sans Serif"
 LANGUAGE LANG_ENGLISH, SUBLANG_DEFAULT
 BEGIN
@@ -90,13 +90,13 @@ END
 /* Status Dialog */
 ID_DLG_STATUS DIALOG 6, 18, 380, 210
 STYLE WS_SIZEBOX | WS_SYSMENU | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | DS_CENTER
-CAPTION "OpenVPN"
+CAPTION "Claroty"
 FONT 8, "Microsoft Sans Serif"
 LANGUAGE LANG_ENGLISH, SUBLANG_DEFAULT
 BEGIN
     LTEXT "Connecting…", ID_TXT_STATUS, 20, 5, 200, 10
     LTEXT "", ID_TXT_BYTECOUNT, 20, 175, 200, 10
-    LTEXT "OpenVPN GUI 11.y.0.0/2.4.x", ID_TXT_VERSION, 220, 175, 150, 10
+    LTEXT "Claroty GUI 11.y.0.0/2.4.x", ID_TXT_VERSION, 220, 175, 150, 10
     LTEXT "", ID_TXT_IP, 20, 160, 300, 10
     PUSHBUTTON "&Disconnect", ID_DISCONNECT, 50, 190, 50, 14
     PUSHBUTTON "&Reconnect", ID_RESTART, 150, 190, 50, 14
@@ -106,7 +106,7 @@ END
 /* Change Passphrase Dialog */
 ID_DLG_CHGPASS DIALOG 6, 18, 193, 82
 STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | DS_CENTER
-CAPTION "OpenVPN - Change Private Key Passphrase"
+CAPTION "Claroty - Change Private Key Passphrase"
 FONT 8, "Microsoft Sans Serif"
 LANGUAGE LANG_ENGLISH, SUBLANG_DEFAULT
 BEGIN
@@ -220,7 +220,7 @@ END
 /* Proxy Authentication Dialog */
 ID_DLG_PROXY_AUTH DIALOG 29, 23, 154, 65
 STYLE DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | DS_CENTER
-CAPTION "OpenVPN - Proxy Authentication"
+CAPTION "Claroty - Proxy Authentication"
 FONT 8, "Microsoft Sans Serif"
 LANGUAGE LANG_ENGLISH, SUBLANG_DEFAULT
 BEGIN
@@ -237,12 +237,12 @@ BEGIN
     IDS_LANGUAGE_NAME "English"
 
     /* Tray - Resources */
-    IDS_TIP_DEFAULT "OpenVPN GUI "
+    IDS_TIP_DEFAULT "Claroty GUI "
     IDS_TIP_CONNECTED "\nConnected to: "
     IDS_TIP_CONNECTING "\nConnecting to: "
     IDS_TIP_CONNECTED_SINCE "\nConnected since: "
     IDS_TIP_ASSIGNED_IP "\nAssigned IP: %s"
-    IDS_MENU_SERVICE "OpenVPN Service"
+    IDS_MENU_SERVICE "Claroty Service"
     IDS_MENU_IMPORT "Import file…"
     IDS_MENU_SETTINGS "Settings…"
     IDS_MENU_CLOSE "Exit"
@@ -260,14 +260,14 @@ BEGIN
     IDS_MENU_SERVICEONLY_START "Connect"
     IDS_MENU_SERVICEONLY_STOP "Disconnect"
     IDS_MENU_SERVICEONLY_RESTART "Reconnect"
-    IDS_MENU_ASK_STOP_SERVICE "Do you want to disconnect (Stop the OpenVPN Service)?"
+    IDS_MENU_ASK_STOP_SERVICE "Do you want to disconnect (Stop the Claroty Service)?"
 
     /* Logviewer - Resources */
     IDS_ERR_START_LOG_VIEWER "Error starting log-viewer: %s"
     IDS_ERR_START_CONF_EDITOR "Error starting config-editor: %s"
 
     /* OpenVPN */
-    IDS_ERR_MANY_CONFIGS "OpenVPN GUI does not support more than %d configs. Please contact the author if you have the need for more."
+    IDS_ERR_MANY_CONFIGS "Claroty GUI does not support more than %d configs. Please contact the author if you have the need for more."
     IDS_NFO_NO_CONFIGS "No readable connection profiles (config files) found.\n"\
                        "Use the ""Import File.."" menu or copy your config files to ""%s"" or ""%s""."
     IDS_ERR_CONFIG_NOT_AUTHORIZED "Starting this connection (%s) requires membership in "\
@@ -280,8 +280,8 @@ BEGIN
                                   """%s"" group.\n\n"\
                                   "Please complete the previous authorization dialog."
     IDS_ERR_ADD_USER_TO_ADMIN_GROUP "Adding the user to ""%s"" group failed."
-    IDS_ERR_ONE_CONN_OLD_VER "You can only have one connection running at the same time when using an older version on OpenVPN than 2.0-beta6."
-    IDS_ERR_STOP_SERV_OLD_VER "You cannot use OpenVPN GUI to start a connection while the OpenVPN Service is running (with OpenVPN 1.5/1.6). Stop OpenVPN Service first if you want to use OpenVPN GUI."
+    IDS_ERR_ONE_CONN_OLD_VER "You can only have one connection running at the same time when using an older version on Claroty than 2.0-beta6."
+    IDS_ERR_STOP_SERV_OLD_VER "You cannot use Claroty GUI to start a connection while the Claroty Service is running (with Claroty 1.5/1.6). Stop Claroty Service first if you want to use Claroty GUI."
     IDS_ERR_CREATE_EVENT "CreateEvent failed on exit event: %s"
     IDS_ERR_UNKNOWN_PRIORITY "Unknown priority name: %s"
     IDS_ERR_LOG_APPEND_BOOL "Log file append flag (given as '%s') must be '0' or '1'"
@@ -294,7 +294,7 @@ BEGIN
     IDS_ERR_DUP_HANDLE_IN_WRITE "DuplicateHandle on hInputWrite failed."
     IDS_ERR_CREATE_PROCESS "CreateProcess failed, exe='%s' cmdline='%s' dir='%s'"
     IDS_ERR_CREATE_THREAD_STATUS "CreateThread to show Status window Failed."
-    IDS_NFO_STATE_WAIT_TERM "Current State: Waiting for OpenVPN to terminate…"
+    IDS_NFO_STATE_WAIT_TERM "Current State: Waiting for Claroty to terminate…"
     IDS_NFO_STATE_CONNECTED "Current State: Connected"
     IDS_NFO_NOW_CONNECTED "%s is now connected."
     IDS_NFO_ASSIGN_IP "Assigned IP: %s"
@@ -308,13 +308,13 @@ BEGIN
     IDS_NFO_STATE_FAILED_RECONN "Current State: Failed to reconnect"
     IDS_NFO_RECONN_FAILED "ReConnecting to %s has failed."
     IDS_NFO_STATE_SUSPENDED "Current State: Suspended"
-    IDS_ERR_READ_STDOUT_PIPE "Error reading from OpenVPN StdOut Pipe."
+    IDS_ERR_READ_STDOUT_PIPE "Error reading from Claroty StdOut Pipe."
     IDS_ERR_CREATE_EDIT_LOGWINDOW "Creating RichEdit LogWindow Failed!!"
     IDS_ERR_SET_SIZE "Set Size failed!"
     IDS_ERR_AUTOSTART_CONF "Cannot find requested config to autostart: %s"
     IDS_ERR_CREATE_PIPE_IN_READ "CreatePipe on hInputRead failed."
     IDS_NFO_STATE_CONNECTING "Current State: Connecting"
-    IDS_NFO_CONNECTION_XXX "OpenVPN Connection (%s)"
+    IDS_NFO_CONNECTION_XXX "Claroty Connection (%s)"
     IDS_NFO_STATE_CONN_SCRIPT "Current State: Running Connect Script"
     IDS_NFO_STATE_DISCONN_SCRIPT "Current State: Running Disconnect Script"
     IDS_ERR_RUN_CONN_SCRIPT "Error running Connect Script: %s"
@@ -331,13 +331,13 @@ BEGIN
     IDS_ERR_CREATE_PATH "Could not create %s path:\n%s"
     IDS_ERR_LOAD_RICHED20 "Could not load RICHED20.DLL."
     IDS_ERR_SHELL_DLL_VERSION "Your shell32.dll version is to low (0x%lx). You need at least version 5.0."
-    IDS_NFO_SERVICE_STARTED "OpenVPN Service started."
-    IDS_NFO_SERVICE_STOPPED "OpenVPN Service stopped."
-    IDS_NFO_ACTIVE_CONN_EXIT "There are still active connections that will be closed if you exit OpenVPN GUI." \
+    IDS_NFO_SERVICE_STARTED "Claroty Service started."
+    IDS_NFO_SERVICE_STOPPED "Claroty Service stopped."
+    IDS_NFO_ACTIVE_CONN_EXIT "There are still active connections that will be closed if you exit Claroty GUI." \
                              "\n\nAre you sure you want to exit?"
-    IDS_NFO_SERVICE_ACTIVE_EXIT "You are currently connected (the OpenVPN Service is running). " \
-                                "You will stay connected even if you exit OpenVPN GUI.\n\n" \
-                                "Do you want to proceed and exit OpenVPN GUI?"
+    IDS_NFO_SERVICE_ACTIVE_EXIT "You are currently connected (the Claroty Service is running). " \
+                                "You will stay connected even if you exit Claroty GUI.\n\n" \
+                                "Do you want to proceed and exit Claroty GUI?"
 
     /* options - Resources */
     IDS_NFO_USAGE "--help\t\t\t: Show this message.\n" \
@@ -376,7 +376,7 @@ BEGIN
                   "--disconnectscript_timeout\t: Time to wait for disconnect script to finish.\n" \
                   "--preconnectscript_timeout\t: Time to wait for preconnect script to finish.\n"
 
-    IDS_NFO_USAGECAPTION "OpenVPN GUI Usage"
+    IDS_NFO_USAGECAPTION "Claroty GUI Usage"
     IDS_ERR_BAD_PARAMETER "I'm trying to parse ""%s"" as an --option parameter " \
                       "but I don't see a leading '--'"
     IDS_ERR_BAD_OPTION "Options error: Unrecognized option or missing parameter(s): --%s\n" \
@@ -410,7 +410,7 @@ BEGIN
                              "Please choose another one."
 
     /* settings */
-    IDS_SETTINGS_CAPTION "OpenVPN - Settings"
+    IDS_SETTINGS_CAPTION "Claroty - Settings"
 
     /* proxy */
     IDS_ERR_HTTP_PROXY_ADDRESS "You must specify a HTTP proxy address."
@@ -426,10 +426,10 @@ BEGIN
     IDS_ERR_OPEN_VPN_SERVICE "Failed to open ""OpenVPNService"""
     IDS_ERR_START_SERVICE "Failed to start ""OpenVPNService"""
     IDS_ERR_QUERY_SERVICE "Failed to query service status."
-    IDS_ERR_SERVICE_START_FAILED "OpenVPN Service failed to start."
+    IDS_ERR_SERVICE_START_FAILED "Claroty Service failed to start."
     IDS_ERR_OPEN_SCMGR "OpenSCManager failed (%d)"
-    IDS_ERR_STOP_SERVICE "Failed to stop OpenVPN Service"
-    IDS_NFO_RESTARTED "OpenVPN Service restarted."
+    IDS_ERR_STOP_SERVICE "Failed to stop Claroty Service"
+    IDS_NFO_RESTARTED "Claroty Service restarted."
     IDS_ERR_ACCESS_SERVICE_PIPE "Access to service pipe failed."
     IDS_ERR_WRITE_SERVICE_PIPE "Writing to service pipe failed."
     IDS_ERR_INSTALL_ISERVICE     """OpenVPNServiceInteractive"" is not installed.\n"
@@ -442,7 +442,7 @@ BEGIN
     IDS_ERR_GET_PROFILE_DIR "Error getting User Profile Directory."
     IDS_ERR_GET_PROGRAM_DIR "Error getting ""Program"" folder name."
     IDS_ERR_OPEN_REGISTRY "Error opening registry for reading (HKLM\\SOFTWARE\\OpenVPN).\n " \
-                      "OpenVPN is probably not installed"
+                      "Claroty is probably not installed"
     IDS_ERR_READING_REGISTRY "Error reading registry value (HKLM\\SOFTWARE\\OpenVPN)."
     IDS_ERR_PASSPHRASE_ATTEMPTS "Registry value ""passphrase_attempts"" must be a number between 1 and 9."
     IDS_ERR_CONN_SCRIPT_TIMEOUT "Registry value ""connectscript_timeout"" must be a number between 0 and 99."
@@ -464,7 +464,7 @@ BEGIN
     IDS_NFO_DELETE_PASS "Press OK to delete saved passwords for config ""%s"""
 
     /* Token password related */
-    IDS_NFO_TOKEN_PASSWORD_CAPTION "OpenVPN - Token Password"
+    IDS_NFO_TOKEN_PASSWORD_CAPTION "Claroty - Token Password"
     IDS_NFO_TOKEN_PASSWORD_REQUEST "Input Password/PIN for Token '%S'"
 
     IDS_NFO_AUTH_PASS_RETRY "Wrong credentials. Try again..."
@@ -472,7 +472,7 @@ BEGIN
     IDS_ERR_INVALID_PASSWORD_INPUT "Invalid character in password"
     IDS_ERR_INVALID_USERNAME_INPUT "Invalid character in username"
     IDS_NFO_AUTO_CONNECT    "Connecting automatically in %u seconds..."
-    IDS_NFO_CLICK_HERE_TO_START "OpenVPN GUI is already running. Right click on the tray icon to start."
+    IDS_NFO_CLICK_HERE_TO_START "Claroty GUI is already running. Right click on the tray icon to start."
     IDS_NFO_BYTECOUNT "Bytes in: %s  out: %s"
 
 END
